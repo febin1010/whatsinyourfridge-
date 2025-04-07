@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     async function showRecipeDetails(recipeId) {
-        const apiKey = '2a4d249944b74d2288da87ef5f782c0a';
+        const apiKey = '';
         const url = `https://api.spoonacular.com/recipes/${recipeId}/information?includeNutrition=false&apiKey=${apiKey}`;
         
         loadingElement.style.display = 'flex';
