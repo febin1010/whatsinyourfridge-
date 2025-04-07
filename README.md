@@ -30,4 +30,4 @@ A web application that suggests recipes based on ingredients you have in your fr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/fridge-recipe-finder.git
+   git clone https://github.com/febin1010/fridge-recipe-finder.git
