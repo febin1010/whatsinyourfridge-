@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     async function fetchRecipes(ingredients) {
-        const apiKey = 'f713b479323b447c981a8499a6e1b386';
+        const apiKey = '?';
         const ingredientsString = ingredients.join(',+');
         const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientsString}&number=10&apiKey=${apiKey}`;
         
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     async function showRecipeDetails(recipeId) {
-        const apiKey = '';
+        const apiKey = '?';
         const url = `https://api.spoonacular.com/recipes/${recipeId}/information?includeNutrition=false&apiKey=${apiKey}`;
         
         loadingElement.style.display = 'flex';
