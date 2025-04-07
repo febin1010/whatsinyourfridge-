@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>What's in Your Fridge?</h1>
+            <p>Enter the ingredients you have, and we'll find delicious recipes for you!</p>
+        </header>
+
+        <div class="search-section">
+            <div class="input-container">
+                <input type="text" id="ingredient-input" placeholder="e.g. chicken, tomatoes, pasta">
+                <button id="add-ingredient">Add</button>
+            </div>
+            <div id="ingredients-list"></div>
+            <button id="find-recipes" class="primary-btn">Find Recipes</button>
+        </div>
+
+        <div class="results-section" id="results-section">
+            <h2>Suggested Recipes</h2>
+            <div id="recipes-container"></div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Finding delicious recipes...</p>
+        </div>
+    </div>
+    <div class="modal" id="recipe-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-recipe-title"></h2>
+            <img id="modal-recipe-image" src="" alt="" class="modal-image">
+            
+            <div class="modal-columns">
+                <div class="modal-column">
+                    <h3>Used Ingredients</h3>
+                    <ul id="used-ingredients"></ul>
+                    
+                    <h3>Missing Ingredients</h3>
+                    <ul id="missing-ingredients"></ul>
+                </div>
+                
+                <div class="modal-column">
+                    <h3>Instructions</h3>
+                    <ol id="recipe-instructions"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
